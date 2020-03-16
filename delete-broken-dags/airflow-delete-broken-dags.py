@@ -23,7 +23,7 @@ SCHEDULE_INTERVAL = "@daily"
 # Who is listed as the owner of this DAG in the Airflow Web Server
 DAG_OWNER_NAME = "operations"
 # List of email address to send email alerts to if this job fails
-ALERT_EMAIL_ADDRESSES = []
+ALERT_EMAIL_ADDRESSES = ["gaetan@datacamp.com"]
 # Whether the job should delete the logs or not. Included if you want to
 # temporarily avoid deleting the logs
 ENABLE_DELETE = True

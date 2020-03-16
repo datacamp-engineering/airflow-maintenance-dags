@@ -30,16 +30,16 @@ START_DATE = airflow.utils.dates.days_ago(1)
 # How often to Run. @daily - Once a day at Midnight. @hourly - Once an Hour.
 SCHEDULE_INTERVAL = "@hourly"
 # Who is listed as the owner of this DAG in the Airflow Web Server
-DAG_OWNER_NAME = "operations"
+DAG_OWNER_NAME = "dataengineering"
 # List of email address to send email alerts to if this job fails
-ALERT_EMAIL_ADDRESSES = []
+ALERT_EMAIL_ADDRESSES = ["gaetan@datacamp.com"]
 # Whether to send out an email whenever a process was killed during a DAG Run
 # or not
 SEND_PROCESS_KILLED_EMAIL = True
 # Subject of the email that is sent out when a task is killed by the DAG
 PROCESS_KILLED_EMAIL_SUBJECT = DAG_ID + " - Tasks were Killed"
 # List of email address to send emails to when a task is killed by the DAG
-PROCESS_KILLED_EMAIL_ADDRESSES = []
+PROCESS_KILLED_EMAIL_ADDRESSES = ["gaetan@datacamp.com"]
 # Whether the job should delete the db entries or not. Included if you want to
 # temporarily avoid deleting the db entries.
 ENABLE_KILL = True
